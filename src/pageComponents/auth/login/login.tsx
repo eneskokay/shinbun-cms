@@ -1,12 +1,15 @@
-import React from 'react';
-import {Input} from "@mui/base";
+import {Box, TextField} from "@mui/material";
+import styles from "./login.module.css";
+import InputComp from "@/components/inputComp";
+import {useTranslation} from "react-i18next";
 
 function Login() {
+const {t} = useTranslation('common');
 
     return (
-        <div>
-            <Input defaultValue={} />
-        </div>
+        <Box className={styles.mainCont} boxShadow={5} >
+            <InputComp inputName={t('login')} />
+        </Box>
     );
 }
 

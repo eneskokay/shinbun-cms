@@ -10,13 +10,16 @@
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
-    "@emotion/server": "^11.11.0",
-    "@mui/material": "^5.15.0",
-    "@mui/material-nextjs": "^5.15.0",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.4",
+    "@mui/material-nextjs": "^5.15.3",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.12",
     "next": "14.0.3",
+    "next-intl": "^3.4.5",
     "react": "^18",
     "react-dom": "^18",
-    "react-i18next": "^13.5.0"
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@types/node": "^20",
