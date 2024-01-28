@@ -1,6 +1,6 @@
-export async function GET(request: Request) {
-    const {searchParams} = new URL(request.url);
-    const id = searchParams.get('id');
+import { sqlClient } from "@/config/db";
 
-    return new Response(id);
+export async function GET() {
+  const admin = await sqlClient.query("SELECT * FROM admin");
+  return Response.json({ data: admin });
 }
